@@ -1,6 +1,6 @@
 # API using Dotnet with JWT and IdentityModel
 
-![.net core](https://www.targethost.com.br/site/wp-content/uploads/2019/09/1_XwSwno9LFOxt_Ae3tGtRIg.jpeg)
+![api](.github/images/api.png)
 
 # Description
 
@@ -33,12 +33,13 @@ or
 
 ## Requirements
 
-- SQL Server (2017 or higher)
-- Dotnet (version 3.1)
+- SQL Server (2019 or higher)
+- Dotnet (version 5.0)
 - Dotnet EF (Entity Framework)
 - Azure DataStudio (optional)
 - Vscode or Visual Studio 2019
 - Postman or Insomnia
+- Swagger UI and JSON
 
 ## LICENSE
 
@@ -51,3 +52,4 @@ See [LICENSE](LICENSE.md)
 - [Dotnet](https://docs.microsoft.com/en-us/dotnet/)
 - [JWT](https://jwt.io/)
 - [Auto Mapper](https://docs.automapper.org/en/stable/Getting-started.html)
+- [Swagger](https://swagger.io/)
