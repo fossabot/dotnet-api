@@ -4,7 +4,7 @@
 
 # Description
 
-- Project Dotnet with JWT, Auto Mapper and Identity Model.
+- Project Dotnet with JWT, Auto Mapper, Swagger and Identity Model.
 
 ## Version
 
