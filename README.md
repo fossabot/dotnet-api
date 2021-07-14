@@ -1,5 +1,7 @@
 # API using Dotnet with JWT and IdentityModel
 
+[![.NET](https://github.com/leandrocunha526/dotnet-api/actions/workflows/dotnet.yml/badge.svg)](https://github.com/leandrocunha526/dotnet-api/actions/workflows/dotnet.yml)
+
 ![api](.github/images/api.png)
 
 # Description

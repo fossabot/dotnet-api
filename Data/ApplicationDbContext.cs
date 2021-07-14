@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using backend.Entities;
+using backend.Models;
 
 namespace backend.Data
 {
@@ -7,5 +8,6 @@ namespace backend.Data
 	{
 		public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 		public DbSet<User> Users { get; set; }
+		public DbSet<Product> Products { get; set; }
 	}
 }

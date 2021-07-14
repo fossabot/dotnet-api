@@ -37,6 +37,7 @@ namespace backend
 			services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 			services.AddCors();
 			services.AddControllers();
+			services.AddScoped<IRepository, Repository>();
 			services.AddSwaggerGen(c =>
 			{
 				c.SwaggerDoc("v1", new OpenApiInfo { Title = "backend", Version = "v1" });
