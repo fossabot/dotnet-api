@@ -12,7 +12,7 @@
 
 # Description
 
-- Project Dotnet with JWT, Auto Mapper, Swagger and Identity Model.
+- Project Dotnet API with JWT, Auto Mapper, Entity Framework, Swagger and Identity Model.
 
 ## Version
 
