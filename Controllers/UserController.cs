@@ -52,8 +52,7 @@ namespace backend.Controllers
 					new Claim(ClaimTypes.Name, user.Id.ToString())
 			}),
 				Expires = DateTime.UtcNow.AddDays(7),
-				SigningCredentials = new SigningCredentials
-				(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha512Signature)
+				SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
 			};
 			var token = tokenHandler.CreateToken(tokenDescriptor);
 			var tokenString = tokenHandler.WriteToken(token);
@@ -78,7 +77,7 @@ namespace backend.Controllers
 				_userService.Create(user, model.Password);
 				return StatusCode(200, "message: Registered successfully");
 			}
-			catch (ApplicationException ex)
+			catch (AppException ex)
 			{
 				return BadRequest(new
 				{
@@ -116,7 +115,7 @@ namespace backend.Controllers
 				_userService.Update(user, model.Password);
 				return Ok();
 			}
-			catch (ApplicationException ex)
+			catch (AppException ex)
 			{
 				return BadRequest(new
 				{

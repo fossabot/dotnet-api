@@ -18,11 +18,15 @@ namespace backend.Services
 		{
 			if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
 				return null;
+
 			var user = _context.Users.SingleOrDefault(x => x.Username == username);
+
 			if (user == null)
 				return null;
+
 			if (!VerifyPasswordHash(password, user.PasswordHash, user.PasswordSalt))
 				return null;
+
 			return user;
 		}
 		public IEnumerable<User> GetAll()
@@ -37,14 +41,20 @@ namespace backend.Services
 		{
 			if (string.IsNullOrWhiteSpace(password))
 				throw new AppException("Password is required");
+
 			if (_context.Users.Any(x => x.Username == user.Username))
 				throw new AppException("Username " + user.Username + " is already taken");
+
 			byte[] passwordHash, passwordSalt;
+
 			CreatePasswordHash(password, out passwordHash, out passwordSalt);
+
 			user.PasswordHash = passwordHash;
 			user.PasswordSalt = passwordSalt;
+
 			_context.Users.Add(user);
 			_context.SaveChanges();
+
 			return user;
 		}
 		public void Update(User userParam, string password = null)
@@ -108,7 +118,7 @@ namespace backend.Services
 						return false;
 				}
 			}
-			return false;
+			return true;
 		}
 	}
 }
