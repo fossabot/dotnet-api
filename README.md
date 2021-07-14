@@ -32,12 +32,19 @@ or
 
 ## To create migrations
 
-- SQL Server EF Core Migrations:
-  `dotnet ef migrations add InitialCreate`
+- SQL Server EF Core Migrations: `dotnet ef migrations add InitialCreate`
 
 ## To create databases
 
 `dotnet ef database update`
+
+## Generate backend.dll
+
+`dotnet publish`
+
+## Instructions to use Docker
+
+[Docker images for ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/docker/building-net-docker-images?view=aspnetcore-5.0)
 
 ## Requirements
 
@@ -48,6 +55,7 @@ or
 - Vscode or Visual Studio 2019
 - Postman or Insomnia
 - Swagger UI and JSON
+- Docker and Docker Compose
 
 ## LICENSE
 
@@ -61,3 +69,5 @@ See [LICENSE](LICENSE.md)
 - [JWT](https://jwt.io/)
 - [Auto Mapper](https://docs.automapper.org/en/stable/Getting-started.html)
 - [Swagger](https://swagger.io/)
+- [Compose and ASP.NET Core with SQL Server](https://docs.docker.com/samples/aspnet-mssql-compose)
+- [Dockerize an ASP.NET Core application](https://docs.docker.com/samples/dotnetcore/)
