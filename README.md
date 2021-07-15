@@ -1,6 +1,7 @@
 # API using Dotnet with JWT and IdentityModel
 
 [![.NET](https://github.com/leandrocunha526/dotnet-api/actions/workflows/dotnet.yml/badge.svg)](https://github.com/leandrocunha526/dotnet-api/actions/workflows/dotnet.yml)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fleandrocunha526%2Fdotnet-api.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fleandrocunha526%2Fdotnet-api?ref=badge_shield)
 
 # User
 
@@ -64,6 +65,9 @@ or
 ## LICENSE
 
 See [LICENSE](LICENSE.md)
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fleandrocunha526%2Fdotnet-api.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fleandrocunha526%2Fdotnet-api?ref=badge_large)
 
 ## Docs
 
