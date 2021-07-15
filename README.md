@@ -12,7 +12,7 @@
 
 # Description
 
-- Project Dotnet API with JWT, Auto Mapper, Entity Framework, Swagger and Identity Model.
+- Project Dotnet API with JWT, Auto Mapper, Entity Framework, Swagger, Docker and Identity Model.
 
 ## Version
 
@@ -37,10 +37,6 @@ or
 ## To create databases
 
 `dotnet ef database update`
-
-## Generate backend.dll
-
-`dotnet publish`
 
 ## Instructions to use Docker
 
