@@ -9,7 +9,12 @@ namespace backend.Data
 		void Update<T>(T entity) where T : class;
 		void Delete<T>(T entity) where T : class;
 		Task<bool> SaveChangesAsync();
-		Task<Product[]> GetAllProductsAsync();
-		Task<Product> GetProductAsyncById(int ProductId);
+		//Product
+		Task<Product[]> GetAllProductsAsync(bool includeCategory);
+		Task<Product> GetProductAsyncById(int ProductId, bool includeCategory);
+
+		//Category
+		Task<Category[]> GetCategoryAsync(bool includeProduct);
+		Task<Category> GetCategoryById(int CategoryId, bool includeProduct);
 	}
 }

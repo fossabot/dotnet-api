@@ -22,7 +22,7 @@ namespace backend.Controllers
 		{
 			try
 			{
-				var result = await _repository.GetAllProductsAsync();
+				var result = await _repository.GetAllProductsAsync(true);
 				return Ok(result);
 			}
 			catch (System.Exception)
@@ -35,7 +35,7 @@ namespace backend.Controllers
 		{
 			try
 			{
-				var result = await _repository.GetProductAsyncById(ProductId);
+				var result = await _repository.GetProductAsyncById(ProductId, true);
 				return Ok(result);
 			}
 			catch (System.Exception)
@@ -65,13 +65,13 @@ namespace backend.Controllers
 		{
 			try
 			{
-				var product = await _repository.GetProductAsyncById(ProductId);
+				var product = await _repository.GetProductAsyncById(ProductId, false);
 				if (product == null)
 					return NotFound();
 				_repository.Update(model);
 				if (await _repository.SaveChangesAsync())
 				{
-					product = await _repository.GetProductAsyncById(ProductId);
+					product = await _repository.GetProductAsyncById(ProductId, true);
 					return Created($"/api/product/{model.Id}", product);
 				}
 			}
@@ -86,7 +86,7 @@ namespace backend.Controllers
 		{
 			try
 			{
-				var product = await _repository.GetProductAsyncById(ProductId);
+				var product = await _repository.GetProductAsyncById(ProductId, false);
 				if (product == null)
 					return NotFound();
 				_repository.Delete(product);
