@@ -4,11 +4,19 @@
 
 # User
 
-![api](.github/images/api.png)
+![user](.github/images/user.png)
 
 # Product
 
 ![product](.github/images/product.png)
+
+# Category
+
+![category](.github/images/category.png)
+
+# ER Diagram
+
+![diagram](.github/images/diagram.png)
 
 # Description
 
